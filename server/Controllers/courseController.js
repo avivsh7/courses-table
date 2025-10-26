@@ -1,6 +1,6 @@
 const courseService = require('../Services/courseService');
 
-// POST - Upload and csv file to db
+// POST - Upload csv file to db
 async function uploadCSV(req, res) {
   try {
     const result = await courseService.saveCoursesFromCSV(req.file.path);
